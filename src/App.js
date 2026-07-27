@@ -2,8 +2,11 @@ import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
 
+// Layout Components
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
+// Public Pages
 import Home from "./pages/public/Home";
 import About from "./pages/public/About";
 import Contact from "./pages/public/Contact";
@@ -24,6 +27,8 @@ function App() {
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
