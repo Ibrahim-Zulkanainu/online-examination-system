@@ -1,0 +1,39 @@
+:root {
+
+  /* Primary Colors */
+  --primary-color: #2563EB;
+  --primary-dark: #1E40AF;
+  --secondary-color: #3B82F6;
+
+  /* Status Colors */
+  --success-color: #16A34A;
+  --warning-color: #F59E0B;
+  --danger-color: #DC2626;
+
+  /* Background */
+  --background-color: #F8FAFC;
+  --card-color: #FFFFFF;
+
+  /* Text */
+  --text-color: #1F2937;
+  --text-light: #6B7280;
+
+  /* Border */
+  --border-color: #E5E7EB;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+  --shadow-md: 0 8px 20px rgba(0,0,0,.12);
+
+  /* Transition */
+  --transition: all .3s ease;
+
+  /* Font */
+  --font: 'Poppins', sans-serif;
+
+}

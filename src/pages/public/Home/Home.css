@@ -1,0 +1,32 @@
+.home-page{
+    padding:60px 0;
+}
+
+.hero-card{
+    background:white;
+    padding:60px;
+    border-radius:18px;
+    box-shadow:var(--shadow-md);
+    text-align:center;
+}
+
+.hero-card h1{
+    color:var(--primary-color);
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-card p{
+    color:var(--text-light);
+    font-size:18px;
+    line-height:1.7;
+    max-width:800px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
