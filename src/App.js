@@ -1,35 +1,81 @@
 import "./App.css";
-
 import { Routes, Route } from "react-router-dom";
 
-// Layout Components
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+// Layouts
+import PublicLayout from "./components/layouts/PublicLayout";
+import AuthLayout from "./components/layouts/AuthLayout";
 
 // Public Pages
 import Home from "./pages/public/Home";
 import About from "./pages/public/About";
 import Contact from "./pages/public/Contact";
+
+// Authentication Pages
+import Register from "./pages/public/Register";
 import StudentLogin from "./pages/public/StudentLogin";
 import AdminLogin from "./pages/public/AdminLogin";
-import Register from "./pages/public/Register";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Routes>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/student-login" element={<StudentLogin />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
+      {/* Public Pages */}
+      <Route
+        path="/"
+        element={
+          <PublicLayout>
+            <Home />
+          </PublicLayout>
+        }
+      />
 
-      <Footer />
-    </>
+      <Route
+        path="/about"
+        element={
+          <PublicLayout>
+            <About />
+          </PublicLayout>
+        }
+      />
+
+      <Route
+        path="/contact"
+        element={
+          <PublicLayout>
+            <Contact />
+          </PublicLayout>
+        }
+      />
+
+      {/* Authentication Pages */}
+      <Route
+        path="/register"
+        element={
+          <AuthLayout>
+            <Register />
+          </AuthLayout>
+        }
+      />
+
+      <Route
+        path="/student-login"
+        element={
+          <AuthLayout>
+            <StudentLogin />
+          </AuthLayout>
+        }
+      />
+
+      <Route
+        path="/admin-login"
+        element={
+          <AuthLayout>
+            <AdminLogin />
+          </AuthLayout>
+        }
+      />
+
+    </Routes>
   );
 }
 

@@ -18,20 +18,25 @@ function Navbar() {
 
         <div className="nav-buttons">
 
-          <Link to="/student-login">
-            <button className="btn-outline">
-              Student Login
-            </button>
+        <Link to="/register">
+        <button className="btn-outline">
+          Register
+        </button>
+        </Link>
+
+        <Link to="/student-login">
+        <button className="btn-outline">
+         Student Login
+         </button>
+         </Link>
+
+         <Link to="/admin-login">
+         <button className="btn-primary">
+          Admin Login
+          </button>
           </Link>
 
-          <Link to="/admin-login">
-            <button className="btn-primary">
-              Admin Login
-            </button>
-          </Link>
-
-        </div>
-
+          </div>
       </div>
     </nav>
   );
